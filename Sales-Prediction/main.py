@@ -6,7 +6,8 @@
 #
 
 # Variables to hold the sales total and the profit
-
+total_sales = 0
+profit = 0
 # Get the amount of projected sales.
 
 total_sales = float(input("Enter the projected sale: "))
