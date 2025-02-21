@@ -11,12 +11,18 @@ Budget_for_month = float(input("Enter this month budget: $"))
 # Initialize variables
 
 Total_Expense = 0
+week = 1
 
 # Get weekly Expense
-for week in range(1,5):
-    print("Enter expenese in week ",week)
+while True:
+    print(f"Enter expenses for week {week} (or enter 0 to finish):")
     Expense = float(input("$"))
+    
+    if Expense == 0:  # Sentinel value to stop the loop
+        break
+    
     Total_Expense += Expense
+    week += 1
 
 Difference = Budget_for_month - Total_Expense
 
